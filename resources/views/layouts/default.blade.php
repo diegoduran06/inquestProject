@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>inquestPro</title>
-        <link rel="stylesheet" href="{{ elixir('/css/app.css') }}"
+        <link rel="stylesheet" href="{{ elixir('css/app.css') }}"
         @yield('css')
     </head>
     <body>
