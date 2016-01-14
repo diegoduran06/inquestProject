@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace Inquestpro\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Http\Requests;
-use App\Http\Controllers\Controller;
+use Inquestpro\Http\Requests;
+use Inquestpro\Http\Controllers\Controller;
 
 class PruebaController extends Controller
 {
