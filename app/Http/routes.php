@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', 'InicioController@inicio');
+Route::get('/', 'HomeController@index');
 Route::get('users', 'InicioController@guardarUsuario');
 
 /*

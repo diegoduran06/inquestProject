@@ -3,7 +3,7 @@
 namespace Inquestpro;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use Inquestpro\Posts;
+use Inquestpro\Post;
 
 class User extends Authenticatable
 {
@@ -26,6 +26,6 @@ class User extends Authenticatable
     ];
     
     public function posts(){
-        return $this->hasMany(Posts::class);
+        return $this->hasMany(Post::class);
     }
 }
