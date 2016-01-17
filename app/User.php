@@ -3,7 +3,6 @@
 namespace Inquestpro;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use Inquestpro\Post;
 
 class User extends Authenticatable
 {
@@ -13,7 +12,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'first_name', 'email', 'password',
+        'name', 'email', 'password',
     ];
 
     /**
@@ -24,8 +23,8 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
-    
+
     public function posts(){
-        return $this->hasMany(Post::class);
+        return $this->hasMany(Post::class, 'author_id');
     }
 }

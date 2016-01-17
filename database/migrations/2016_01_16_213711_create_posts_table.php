@@ -12,10 +12,11 @@ class CreatePostsTable extends Migration
      */
     public function up()
     {
-        Schema::create('users', function($table)
+        Schema::create('posts', function($table)
         {
-          $table->incremement('id');
-          $table->string('name');
+          $table->increments('id');
+          $table->string('title');
+          $table->text('body');
           $table->integer('author_id');
           $table->timestamps();
         });
@@ -28,6 +29,6 @@ class CreatePostsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists();
+        Schema::dropIfExists('posts');
     }
 }
