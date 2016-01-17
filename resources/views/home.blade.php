@@ -1,13 +1,20 @@
 @extends('layouts.default')
 @section('content')
     <h1>Estos son nuestros Posts</h1>
-
-    <ul>
+    <hr>
+    <ul class="list-unstyled">
     @foreach($posts as $post)
     	<li>
-    		<a href="{{route('post_show_path',$post->id)}}">{{$post->title}}</a>
-    		{{$post->author->name}}
+    		<p class="lead">
+	    		<a href="{{route('post_show_path',$post->id)}}">
+					{{$post->title}}
+				</a>
+    		</p>
+    		autor: {{$post->author->name}}
+    		<br>
+    		creado: {{$post->created_at}}
     	</li>
+    	<hr>
     @endforeach
     </ul>
 @stop
