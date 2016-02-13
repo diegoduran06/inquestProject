@@ -1,10 +1,10 @@
 <?php
 
-namespace Inquestpro\Http\Controllers\Auth;
+namespace App\Http\Controllers\Auth;
 
-use Inquestpro\User;
+use App\User;
 use Validator;
-use Inquestpro\Http\Controllers\Controller;
+use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 

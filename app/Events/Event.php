@@ -1,6 +1,6 @@
 <?php
 
-namespace Inquestpro\Events;
+namespace App\Events;
 
 abstract class Event
 {

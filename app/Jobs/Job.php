@@ -1,6 +1,6 @@
 <?php
 
-namespace Inquestpro\Jobs;
+namespace App\Jobs;
 
 use Illuminate\Bus\Queueable;
 

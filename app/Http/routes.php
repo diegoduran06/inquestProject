@@ -11,12 +11,9 @@
 |
 */
 
-Route::get('/', 'HomeController@index');
-Route::get('posts/{id}', 
-		[
-			'uses' => 'PostsController@show',
-			'as'   => 'post_show_path',
-		]);
+Route::get('/', function () {
+    return view('welcome');
+});
 
 /*
 |--------------------------------------------------------------------------
@@ -30,14 +27,5 @@ Route::get('posts/{id}',
 */
 
 Route::group(['middleware' => ['web']], function () {
-    Route::get('auth',
-		[
-			'uses' => 'AuthController@index',
-			'as'   => 'auth_show_path',
-		]);
-	Route::post('auth',
-		[
-			'uses' => 'AuthController@store',
-			'as'   => 'auth_store_path',
-		]);
+    //
 });
