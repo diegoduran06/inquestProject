@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('articles/{nombre?}', function ($nombre = "No colocó nombre") {
+    echo "El nombre que colocaste es: $nombre";
+});
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
