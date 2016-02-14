@@ -3,6 +3,16 @@
 @section('title','Home')
 
 @section('content')
-    <h1>Hola esto es Bootstrap</h1>
-    <a href="" class="btn btn-success">Boton Bootstrap</a>
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">Home</h3>
+      </div>
+      <div class="panel-body">
+        <div class="jumbotron">
+          <h1>Bienvenidos a la plataforma de encuestas online UTS!</h1>
+          <p>Descubre InquestPro Online!!!</p>
+          <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+        </div>
+      </div>
+    </div>
 @endsection
