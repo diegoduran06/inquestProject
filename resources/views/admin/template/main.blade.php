@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>@yield('title','Default') | Panel de administración</title>
+        <title>@yield('title','Home') | Panel de administración</title>
         <link href="{{ asset('plugins/bootstrap/css/bootstrap.css') }}" rel="stylesheet" type="text/css">
     </head>
     <body>
